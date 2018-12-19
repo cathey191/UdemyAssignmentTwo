@@ -1,7 +1,10 @@
 <form class="form-inline">
   <div class="form-group">
     <label for="first_name">First Name</label>
+    <br>
     <input type="text" class="form-control" id="first_name" name="first_name" [(ngModel)]="username">
   </div>
+  <br>
+  <button type="button" class="btn btn-warning" [disabled]="!username">Warning</button>
 </form>
 <p>{{ username }}</p>
